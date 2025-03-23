@@ -36,16 +36,6 @@ Install dependencies:
 npm install
 ```
 
-Build the server:
-```bash
-npm run build
-```
-
-For development with auto-rebuild:
-```bash
-npm run watch
-```
-
 Rename `.envexample` to `.env`:
 ```bash
 mv .envexample .env
@@ -54,6 +44,16 @@ mv .envexample .env
 Update `OPENWEATHER_API_KEY` in the `.env` file:
 ```env
 OPENWEATHER_API_KEY=Your_Own_OpenWeather_API_KEY
+```
+
+Build the server:
+```bash
+npm run build
+```
+
+For development with auto-rebuild:
+```bash
+npm run watch
 ```
 
 ## Installation
