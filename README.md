@@ -1,6 +1,6 @@
-# \weatherserver MCP Server
+# Weather Server MCP Server
 
-test weather server tool
+Test weather server tool
 
 This is a TypeScript-based MCP server that implements a simple notes system. It demonstrates core MCP concepts by providing:
 
@@ -12,8 +12,8 @@ This is a TypeScript-based MCP server that implements a simple notes system. It 
 
 ### Resources
 - List and access notes via `note://` URIs
-- Each note has a title, content and metadata
-- Plain text mime type for simple content access
+- Each note has a title, content, and metadata
+- Plain text MIME type for simple content access
 
 ### Tools
 - `create_note` - Create new text notes
@@ -52,8 +52,8 @@ On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
 ```json
 {
   "mcpServers": {
-    "\weatherserver": {
-      "command": "/path/to/\weatherserver/build/index.js"
+    "weatherserver": {
+      "command": "/path/to/weatherserver/build/index.js"
     }
   }
 }
