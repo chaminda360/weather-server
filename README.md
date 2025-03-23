@@ -2,27 +2,31 @@
 
 Test weather server tool
 
-This is a TypeScript-based MCP server that implements a simple notes system. It demonstrates core MCP concepts by providing:
+This is a TypeScript-based MCP server that implements a weather information system. It demonstrates core MCP concepts by providing:
 
-- Resources representing text notes with URIs and metadata
-- Tools for creating new notes
-- Prompts for generating summaries of notes
+- Resources representing weather data with URIs and metadata
+- Tools for fetching and updating weather information
+- Prompts for generating weather summaries
 
 ## Features
 
 ### Resources
-- List and access notes via `note://` URIs
-- Each note has a title, content, and metadata
-- Plain text MIME type for simple content access
+- List and access weather data via `weather://` URIs
+- Each weather entry has a location, temperature, and metadata
+- JSON mime type for structured data access
 
 ### Tools
-- `create_note` - Create new text notes
-  - Takes title and content as required parameters
-  - Stores note in server state
+- `fetch_weather` - Fetch current weather information
+  - Takes location as a required parameter
+  - Retrieves weather data from an external API
+
+- `update_weather` - Update weather information
+  - Takes location and new weather data as required parameters
+  - Updates the weather data in server state
 
 ### Prompts
-- `summarize_notes` - Generate a summary of all stored notes
-  - Includes all note contents as embedded resources
+- `summarize_weather` - Generate a summary of the current weather data
+  - Includes all weather entries as embedded resources
   - Returns structured prompt for LLM summarization
 
 ## Development
