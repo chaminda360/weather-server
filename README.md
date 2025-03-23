@@ -46,6 +46,11 @@ For development with auto-rebuild:
 npm run watch
 ```
 
+Rename `.envexample` to `.env`:
+```bash
+mv .envexample .env
+```
+
 ## Installation
 
 To use with Claude Desktop, add the server config:
