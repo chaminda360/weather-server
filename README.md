@@ -51,6 +51,11 @@ Rename `.envexample` to `.env`:
 mv .envexample .env
 ```
 
+Update `OPENWEATHER_API_KEY` in the `.env` file:
+```env
+OPENWEATHER_API_KEY=Your_Own_OpenWeather_API_KEY
+```
+
 ## Installation
 
 To use with Claude Desktop, add the server config:
